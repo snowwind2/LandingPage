@@ -1,0 +1,55 @@
+@import "../../../assets/scss/core";
+
+.wo-header {
+  position: relative;
+  // background-color: $gray-99;
+  z-index: 1;
+
+  .navbar-brand {
+    width: rem(168px);
+    height: rem(50px);
+    background: transparent url("../../../assets/images/weopt-logo.svg")
+      no-repeat;
+    padding: 0;
+  }
+
+  .navbar {
+    padding: rem(45px 0 15px);
+  }
+}
+
+.navbar-nav {
+  &._links {
+    margin-left: rem(185px);
+
+    .nav-item {
+      + .nav-item {
+        margin-left: rem(60px);
+      }
+    }
+
+    .nav-link {
+      font-size: rem(22px);
+      color: $gray-11;
+    }
+  }
+
+  &._buttons {
+    .nav-item {
+      + .nav-item {
+        margin-left: rem(28px);
+      }
+    }
+
+    .btn-default {
+      min-width: rem(120px);
+      font-size: rem(18px);
+      line-height: rem(24px);
+      color: $gray-11;
+      border: 1px solid $gray-11;
+      text-align: center;
+      @include border-radius(rem(4px));
+      padding: rem(8px);
+    }
+  }
+}

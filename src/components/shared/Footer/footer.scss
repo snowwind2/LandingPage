@@ -1,0 +1,28 @@
+@import "../../../assets/scss/core";
+
+.wo-footer {
+  background-color: $gray-17;
+  padding: rem(85px 16px 100px);
+
+  address {
+    font-size: rem(24px);
+    color: $white;
+  }
+}
+
+.nav-footer {
+  .nav-link {
+    font-size: rem(24px);
+    color: $white;
+    padding: rem(8px 12px);
+  }
+}
+
+.footer-logo {
+  width: rem(220px);
+  margin: 0 0 rem(40px);
+}
+
+.social-links {
+  margin: 0 rem(-12px);
+}
